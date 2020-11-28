@@ -24,7 +24,10 @@ h3{
     width: 45%;
     min-width: 90px;
     text-align: center;
+    text-transform: uppercase;
     box-sizing: border-box;
+    font-weight: 500;
+    margin: 0.35rem;
 }
 .card-item-container{
     display: flex;
@@ -34,13 +37,12 @@ h3{
     height: 200px;
     
 }
-.photo-card{
-    background-color: aqua;
+.photo-card-shape{
     width: 50%;
     height: 100%;
     display: flex;
 }
-.photo-card img{
+.photo-card-shape img{
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -55,18 +57,18 @@ h3{
     justify-content: space-around;
 }
 .status-card{
-    width: 15px;
-    min-width: 15px;
-    height: 15px;
+    width: 13px;
+    min-width: 13px;
+    height: 13px;
     border-radius: 50%;
     background-color: red;
     margin: 3%;
-    box-shadow: 0px 0px 1px 4px rgba(255, 1, 1, 0.21);
+    box-shadow: 0px 0px 12px 2px rgba(255, 0, 0, 0.767);
 }
 .pane-card{
     display: flex;
     width: 100%;
     background-color:#fff;
     border-radius: 12px 12px 12px 12px;
-    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.527);
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.527);
 }
