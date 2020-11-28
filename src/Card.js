@@ -19,8 +19,10 @@ const api = () =>{
   }
   return (
     <div className='card-container'>
-      <h1>ANIMAIS EM EXTINÇÃO</h1>
-      <p>02 ANIMAIS NA LISTA</p>
+      <div className="card-header">
+        <h1 style={{'margin-right': 'auto'}}>ANIMAIS EM EXTINÇÃO</h1>
+        <p style={{'color': 'rgb(215,213,213)', 'margin-right':'auto', 'fontWeight':'600'}}>02 ANIMAIS NA LISTA</p>
+      </div>
         {animals.map(animal=><CardItem imagem={animal.imagem} nome={animal.nome} nomeCientifico={animal.nomeCientifico} especie={animal.especie} bioma={animal.bioma} />)}
     </div>
   );
