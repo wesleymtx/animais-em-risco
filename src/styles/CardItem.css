@@ -1,8 +1,5 @@
-h1,h2,h3,h4{
-    
-}
 h1{
-    font-size: 17px;
+    font-size: 16px;
     color: rgb(69, 69,69);
     text-transform: uppercase;
 }
@@ -31,7 +28,7 @@ h3{
     justify-content: center;
     width: 100%;
     margin: 15px 0;
-    height: 150px;
+    height: 130px;
     
 }
 .text-bioma{
@@ -95,3 +92,8 @@ h3{
     }
     
   }
+  @media screen and (max-width: 280px) {
+    .pane-card {
+        min-width: 250px;
+    }
+}
