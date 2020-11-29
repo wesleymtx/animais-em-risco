@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import CardItem from './components/CardItem'
-import './styles/Card.css'
+import CardMap from './CardMap'
+import '../styles/Card.css'
 function Card() {
   const [animals, setAnimals] = useState([]);
   useEffect(() => {
@@ -23,7 +23,7 @@ const api = () =>{
         <h1 style={{'margin-right': 'auto', 'padding':'0', 'fontSize':'16px'}}>ANIMAIS EM EXTINÇÃO</h1>
         <p style={{'color': 'grey', 'margin-right':'auto', 'fontWeight':'600', 'fontSize': '13px'}}>02 ANIMAIS NA LISTA</p>
       </div>
-        {animals.map(animal=><CardItem imagem={animal.imagem} nome={animal.nome} nomeCientifico={animal.nomeCientifico} especie={animal.especie} bioma={animal.bioma} risco={animal.risco}/>)}
+        {animals.map(animal=><CardMap imagem={animal.imagem} nome={animal.nome} nomeCientifico={animal.nomeCientifico} especie={animal.especie} bioma={animal.bioma} risco={animal.risco}/>)}
     </div>
   );
 }

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import '../styles/CardItem.css'
-function CardItem(props) {
+function CardMap(props) {
   const [imageNotFound, setImageNotFound] = useState(false)
   const [cutName, setCutName] = useState('lala')
   const fallBackImage = (e, nome)=>{
@@ -74,4 +74,4 @@ return (
 );
 }
 
-export default CardItem;
+export default CardMap;
