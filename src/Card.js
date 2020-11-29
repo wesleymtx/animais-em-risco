@@ -23,7 +23,7 @@ const api = () =>{
         <h1 style={{'margin-right': 'auto', 'padding':'0', 'fontSize':'16px'}}>ANIMAIS EM EXTINÇÃO</h1>
         <p style={{'color': 'grey', 'margin-right':'auto', 'fontWeight':'600', 'fontSize': '13px'}}>02 ANIMAIS NA LISTA</p>
       </div>
-        {animals.map(animal=><CardItem imagem={animal.imagem} nome={animal.nome} nomeCientifico={animal.nomeCientifico} especie={animal.especie} bioma={animal.bioma} />)}
+        {animals.map(animal=><CardItem imagem={animal.imagem} nome={animal.nome} nomeCientifico={animal.nomeCientifico} especie={animal.especie} bioma={animal.bioma} risco={animal.risco}/>)}
     </div>
   );
 }

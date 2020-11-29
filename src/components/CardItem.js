@@ -9,7 +9,6 @@ function CardItem(props) {
     e.target.remove()
   }
   const biomaColor = (e)=>{
-    console.log(e)
     if(e=='Pantanal')
       return pantanalStyle
     else if (e=='Caatinga')
@@ -18,6 +17,14 @@ function CardItem(props) {
       return aquaticoStyle
     else if (e=='Amazônia')
       return amazoniaStyle
+  }
+  const statusColor = (e) =>{
+    if(e=='Em perigo')
+      return statusEmPerigo
+    else if(e=='Crítico')
+      return statusCritico
+    else if(e=='Vulnerável')
+      return statusVulneravel
   }
   const pantanalStyle = {
     'backgroundColor': 'rgb(126, 23, 126)',
@@ -35,6 +42,19 @@ function CardItem(props) {
     'backgroundColor':'rgb(49, 143, 89)',
     'color': 'rgb(29, 85, 53)'
   }
+  const statusEmPerigo = {
+    'background-color': 'rgb(240, 47, 47)',
+    'box-shadow': '0px 0px 12px 2px rgba(240, 47, 47, 0.767)'
+  }
+  const statusCritico = {
+    'background-color': 'rgb(253, 193, 0)',
+    'box-shadow': '0px 0px 12px 2px rgb(253, 193, 0)'
+  }
+  const statusVulneravel = {
+    'background-color': 'rgb(255, 129, 84)',
+    'box-shadow': '0px 0px 12px 2px rgb(255, 129, 84)'
+  }
+
 return (
   <div className="card-item-container">
     <div className="pane-card">
@@ -44,11 +64,11 @@ return (
       </div>
       <div className="content-card">
         <h1>{props.nome}</h1>
-        <h2>{props.nomeCientifico}</h2>
+        <h2>{props.nomeCientifico}</h2> 
         <h3>{props.especie}</h3>
         <div className="text-bioma" style={biomaColor(props.bioma)}>{props.bioma}</div>
       </div>
-        <div className="status-card"></div>
+        <div className="status-card" style={statusColor(props.risco)}></div>
     </div>
   </div>
 );
