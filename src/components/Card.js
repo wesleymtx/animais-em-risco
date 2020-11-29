@@ -13,9 +13,14 @@ const api = () =>{
       return response.json()
     })
     .then(function(data){
-      setAnimals(data.animais)
+      setAnimals(data.animais.sort((a,b)=>{
+        if(a.nome>b.nome)
+          return 1;
+        if(a.nome<b.nome)
+          return -1
+        return
+      }))
     })
-    .then(()=>{console.dir(animals)})
   }
   return (
     <div className='card-container'>
