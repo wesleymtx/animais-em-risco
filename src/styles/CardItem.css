@@ -2,7 +2,7 @@ h1,h2,h3,h4{
     
 }
 h1{
-    font-size: 20px;
+    font-size: 17px;
     color: rgb(69, 69,69);
     text-transform: uppercase;
 }
@@ -31,20 +31,19 @@ h3{
     justify-content: center;
     width: 100%;
     margin: 15px 0;
-    height: 160px;
+    height: 150px;
     
 }
 .text-bioma{
-    padding: 0.18rem 1%;
+    padding: 0.1rem 0.1rem;
     border-radius: 7px 7px 7px 7px;
     color: #fff !important;
     width: 45%;
-    min-width: 90px;
+    min-width: 80px;
     text-align: center;
     text-transform: uppercase;
     box-sizing: border-box;
     font-weight: 500;
-    
     font-size: 13px;
 }
 .photo-card-shape{
@@ -71,7 +70,7 @@ h3{
     min-width: 13px;
     height: 13px;
     border-radius: 50%;
-    margin: 3%;
+    margin: 4%;
     
 }
 .pane-card{
@@ -79,5 +78,20 @@ h3{
     width: 100%;
     background-color:#fff;
     border-radius: 10px 10px 10px 10px;
-    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.527);
+    box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.4);
+    min-width: 300px;
 }
+@media screen and (max-width: 900px) {
+    .card-item-container{
+        height: 130px;        
+        margin: 9px 0;
+    }
+    .card-item-container h1, h2, h3{
+        font-size: 14px;
+    }
+    .card-item-container .text-bioma{
+        font-size: 11px;
+        padding: 0.1rem 0.1rem;
+    }
+    
+  }

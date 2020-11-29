@@ -28,7 +28,7 @@ function CardMap(props) {
   }
   const pantanalStyle = {
     'backgroundColor': 'rgb(126, 23, 126)',
-    'color':'rgb(151, 87, 13)'
+    'color':'rgb(71, 15, 71)'
   };
   const caatingaStyle = {
     'backgroundColor': 'rgb(214,142,58)',
