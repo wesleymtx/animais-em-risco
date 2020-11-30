@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import '../styles/CardItem.css'
 function CardMap(props) {
   const [imageNotFound, setImageNotFound] = useState(false)
-  const [cutName, setCutName] = useState('lala')
+  const [cutName, setCutName] = useState('')
   const fallBackImage = (e, nome)=>{
     setImageNotFound(true)
     setCutName(nome.substr(0,2))
@@ -43,16 +43,16 @@ function CardMap(props) {
     'color': 'rgb(29, 85, 53)'
   }
   const statusEmPerigo = {
-    'background-color': 'rgb(240, 47, 47)',
-    'box-shadow': '0px 0px 12px 2px rgba(240, 47, 47, 0.767)'
+    'backgroundColor': 'rgb(240, 47, 47)',
+    'boxShadow': '0px 0px 12px 2px rgba(240, 47, 47, 0.767)'
   }
   const statusCritico = {
-    'background-color': 'rgb(253, 193, 0)',
-    'box-shadow': '0px 0px 12px 2px rgb(253, 193, 0)'
+    'backgroundColor': 'rgb(253, 193, 0)',
+    'boxShadow': '0px 0px 12px 2px rgb(253, 193, 0)'
   }
   const statusVulneravel = {
-    'background-color': 'rgb(255, 129, 84)',
-    'box-shadow': '0px 0px 12px 2px rgb(255, 129, 84)'
+    'backgroundColor': 'rgb(255, 129, 84)',
+    'boxShadow': '0px 0px 12px 2px rgb(255, 129, 84)'
   }
 
 return (
