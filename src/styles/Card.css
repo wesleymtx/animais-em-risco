@@ -6,11 +6,9 @@
     align-items: center;
     margin-top: 50px;
     width: 23%;
-    height: auto;
     min-width: 310px;
     padding: 0 2%;
     box-shadow: 0px 10px 13px -7px #000000dc, 2px 0px 0px 0px rgba(0,0,0,0.32);
-    position: sticky;
 }
 .card-header{
     margin-right: auto;
