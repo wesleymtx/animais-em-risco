@@ -39,14 +39,14 @@ useEffect(() => {
 return (
   <div className="app-container">
     <Header/>
-    <Card posts={currentPosts}/>
+    <Card posts={currentPosts} loading={loading} totalPosts={posts.length}/>
     <Pagination
         postsPerPage={postsPerPage}
         totalPosts={posts.length}
         paginate={paginate}
       />
-    <Footer/>
     
+    <Footer/>
   </div>
 );
 }
