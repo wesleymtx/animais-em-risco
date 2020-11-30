@@ -1,0 +1,31 @@
+.pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    border-radius: .25rem;
+}
+.page-item{
+    list-style: none;
+}
+.page-link{
+    position: relative;
+    display: block;
+    padding: .5rem .75rem;
+    margin-left: -1px;
+    line-height: 1.25;
+    color: #007bff;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 10%;
+    text-decoration: none;
+}
+.nav-pagination{
+    margin: 10px 0;
+}
+.page-link:hover{
+    background-color: rgb(155, 207, 255);
+}
+.page-link:focus{
+    border: 3px solid #69b4ffb7;
+}
