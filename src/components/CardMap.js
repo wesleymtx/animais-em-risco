@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../styles/CardItem.css'
+import '../styles/CardMap.css'
 function CardMap(props) {
   const [imageNotFound, setImageNotFound] = useState(false)
   const [cutName, setCutName] = useState('')
