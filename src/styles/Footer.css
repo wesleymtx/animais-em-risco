@@ -1,11 +1,16 @@
 .footer-container{
     background-color: rgb(41,35,35);
     color: #fff;
-    height: 89px;
+    height: 80px;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;    
     margin-top: auto;
+}
+@media screen and (max-width:650px){
+    .footer-container{
+        font-size: 12px;
+    }
 }
